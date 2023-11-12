@@ -3,39 +3,80 @@
     font-family: 'Lato', sans-serif;
     font-family: 'Roboto', sans-serif;
     font-family: 'Space Grotesk', sans-serif;
+    background-color: aquamarine;
 }
 
 #color1 {
+    position: absolute;
     height: 40%;
     width: 100%;
 }
 
 #menu {
     position: absolute;
-    height: 50px;
+    height: 80px;
     width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 #logos {
     position: relative;
     width: 40%;
+    display: flex;
+    align-items: center;
 }
 
-#logos img {
-    width: 20px;
-    height: 20px;
+#logos > img {
+    border-radius: 15px;
 }
 
 #opciones {
     position: relative;
     width: 60%;
-    left: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 40px;
+    padding: 1rem 2rem;
+    font-weight: 700;
+    background: rgb(255, 255, 255);
+    color: blueviolet;
+    border-radius: .5rem;
+    border-bottom: 2px solid blueviolet;
+    border-right: 2px solid blueviolet;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    transition-duration: 1s;
+    transition-property: border-top, 
+       border-left, 
+       border-bottom,
+       border-right,
+       box-shadow;
+}
+   
+.btn:hover {
+    border-top: 2px solid blueviolet;
+    border-left: 2px solid blueviolet;
+    border-bottom: 2px solid rgb(238, 103, 238);
+    border-right: 2px solid rgb(238, 103, 238);
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px;
 }
 
 #descripcion {
     position: absolute;
+    top: 155px;
     width: 100%;
-    height: 500px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
 }
 
 #descUno {
@@ -53,17 +94,40 @@
     position: relative;
     width: 50%;
     height: 500px;
-    left: 50px;
 }
 
 #interior2 {
     position: relative;
     width: 50%;
     height: 500px;
-    left: 50px;
 }
 
 #interior2 img {
     width: 150px;
     height: 100px;
+}
+
+#colorDos {
+    position: absolute;
+    height: 60%;
+    width: 100%;
+    top: 60%;
+}
+
+#sociales {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    height: 10%;
+    width: 100%;
+    top: 60%;
+}
+
+#destacados {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    height: 50%;
+    width: 100%;
+    top: 80%;
 }
