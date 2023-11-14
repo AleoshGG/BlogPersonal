@@ -147,9 +147,22 @@
 
 .superior > p {
     margin-left: 60px;
+    margin-right: 25px;
 }
 .superior > li {
     list-style-image: url(public/chek.svg);
+}
+
+.superior > iframe {
+    margin-left: 15px;
+    width: 500px;
+    height: 200px;
+}
+
+#origen {
+    background: repeat;
+    margin-left: 15px;
+    text-align: justify;
 }
 
 #contenidoI {
