@@ -76,7 +76,7 @@
 
 #colorDos {
     position: absolute;
-    height: 90%;
+    height: 100%;
     width: 100%;
     top: 50%;
     background: white;
@@ -179,11 +179,17 @@
     background: repeat;
 }
 
+
+#Descarga {
+    margin-left: 25px;
+    background: repeat;
+}
+
 .pie {
     background: repeat;
     font-size: 11px;
     text-align: center;
-    margin-top: 70%;
+    margin-top: 45%;
 }
 
 .pie > p {
