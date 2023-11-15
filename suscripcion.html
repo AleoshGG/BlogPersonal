@@ -3,18 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de Inserción</title>
+    <title>Suscribete</title>
+    <link rel="stylesheet" href="stylesuscri.css">
+    <link rel="shortcut icon" href="public/icono.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Lato&family=Roboto:wght@700&family=Space+Grotesk&display=swap" rel="stylesheet">
     <script src="insertar_datos.js"></script>
 </head>
 <body>
-    <form id="miFormulario">
-        <label for="name">Nombre:</label>
-        <input type="text" id="name" placeholder="Ingrese su nombre">
-        <br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" placeholder="Ingrese su email">
-        <br>
-        <button type="button" onclick="enviarDatos()">Enviar</button>
-    </form>
+    <div id="colorDos">
+        <footer class="pie">
+            <hr>
+            <p>Todos los derechos reservados Copyright 2023 <br>
+                San Cristóbal de las Casas, Chipas, México.
+            </p>
+        </footer>
+    </div>
+
+    <div id="colorUno">
+        <div id="menu">
+            <div id="logos">
+                <img src="public/aleosh.png" alt="logo personal" width="100px" height="100px">
+                <img src="public/carreralogo.png" alt="logo carrera" width="250px" height="70px">
+            </div>
+            <div id="opciones">
+                <a href="index.html" class="a"><button class="btn">Inicio</button></a>
+                <a href="sobremi.html" class="a"><button class="btn">Sobre mí</button></a>
+                <a href="contacto.html" class="a"><button class="btn">Contacto</button></a>
+                <a href="suscripcion.html" class="a"><button class="btn">Suscribirse</button></a>
+            </div>
+            <div id="panel">
+                <div id="titulo">
+                    <h1>Suscribete</h1>
+                </div>
+                <div id="contenidoS" class="color">
+                    <form id="miFormulario" class="color">
+                        <label for="name" class="labels">Nombre:</label>
+                        <input type="text" id="name" placeholder="Ingrese su nombre" class="imputs">
+                        <br>
+                        <label for="email" class="labels">Email:</label>
+                        <input type="email" id="email" placeholder="Ingrese su email" class="imputs">
+                        <br>
+                        <button type="button" onclick="enviarDatos()" class="btn">Enviar</button>
+                    </form>
+                </div>
+            </div>    
+        </div>
 </body>
 </html>
