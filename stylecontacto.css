@@ -5,7 +5,10 @@
     font-family: 'Space Grotesk', sans-serif;
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(79,26,157,1) 57%, rgba(111,24,159,1) 80%, rgba(198,30,247,1) 100%, rgba(106,13,187,1) 100%);
 }
-
+.a {
+    background: repeat;
+    text-decoration:none;
+}
 #color1 {
     position: absolute;
     width: 100%;

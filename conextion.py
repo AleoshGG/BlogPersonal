@@ -16,8 +16,8 @@ db_config = {
 # Ruta para insertar datos
 @app.route('/insertar_datos', methods=['GET'])
 def insertar_datos():
-    name = request.args.get('name')
-    email = request.args.get('email')
+    name = request.args.get('${name}')
+    email = request.args.get('${email}')
 
     # Conexión y consulta SQL para la inserción
     import mysql.connector
@@ -30,7 +30,7 @@ def insertar_datos():
         cursor = conexion.cursor()
 
         # Ejecutar la inserción
-        insert_query = "INSERT INTO holamundo (name, email) VALUES (%s, %s)"
+        insert_query = "INSERT INTO user (name, email) VALUES (%s,%s)"
         cursor.execute(insert_query, (name, email))
 
         # Confirmar la transacción
@@ -46,5 +46,5 @@ def insertar_datos():
         cursor.close()
         conexion.close()
 
-if __name__ == '__main__':
+if __name__ == '__insertar_datos__':
     app.run(debug=True)

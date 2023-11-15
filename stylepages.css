@@ -12,7 +12,10 @@
     display: flex;
     align-items: center;
 }
-
+.a {
+    background: repeat;
+    text-decoration:none;
+}
 #menu {
     position: absolute;
     width: 100%;

@@ -20,7 +20,10 @@
     display: flex;
     justify-content: center;
 }
-
+.a {
+    background: repeat;
+    text-decoration:none;
+}
 #logos {
     background: repeat;
     position: relative;
